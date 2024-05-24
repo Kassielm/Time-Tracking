@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <title>Frontend Mentor | Time tracking dashboard</title>
+</head>
+<body>
+
+  <div class="container">
+      <div class="firts-card">
+          <div class="main-card">
+              <img class="foto" src="images/image-jeremy.png" alt="jeremy">
+              <p class="name1">Report for</p>
+              <h1 class="name2">Jeremy Robson</h1>
+          </div>
+          <div class="sub-main">
+              <p class="period active" data-period="daily">Daily</p>
+              <p class="period" data-period="weakly">weakly</p>
+              <p class="period" data-period="monthly">Monthly</p>
+          </div>
+      </div>
+
+      <div class="fundo work">
+        <div class="card">
+              <div class="card-header">
+                  <p>Work</p>
+                  <div class="menu-dots">...</div>
+              </div>
+              <p class="daily hora">5hrs</p>
+              <p class="daily sub">Last Week - 7hrs </p>
+              <p class="weakly hora">32hrs</p> 
+              <p class="weakly sub">Previous - 36hrs </p>
+              <p class="monthly hora">103hrs</p> 
+              <p class="monthly sub">Previous - 128hrs</p>
+        </div>
+      </div> 
+
+      <div class="fundo play">
+          <div class="card">
+              <div class="card-header">
+                  <p>Play</p>
+                  <div class="menu-dots">...</div>
+              </div>
+              <p class="daily hora">1hr</p> 
+              <p class="daily sub">Previous - 2hrs </p>
+              <p class="weakly hora">10hrs</p>
+              <p class="weakly sub">Previous - 8hrs</p>
+              <p class="monthly hora">23hrs</p> 
+              <p class="monthly sub">Previous - 29hrs</p>
+          </div>
+      </div> 
+
+      <div class="fundo study">
+          <div class="card">
+              <div class="card-header">
+                  <p>Study</p>
+                  <div class="menu-dots">...</div>
+              </div>
+              <p class="daily hora">0hrs</p> 
+              <p class="daily sub">Previous - 1hr </p>
+              <p class="weakly hora">4hrs</p>
+              <p class="weakly sub">Previous - 7hrs</p>
+              <p class="monthly hora">13hrs</p> 
+              <p class="monthly sub">Previous - 19hrs</p>
+          </div>
+      </div> 
+
+      <div class="fundo exercise">
+          <div class="card">
+              <div class="card-header">
+                  <p>Exercise</p>
+                  <div class="menu-dots">...</div>
+              </div>
+              <p class="daily hora">1hr</p> 
+              <p class="daily sub">Previous - 1hr </p>
+              <p class="weakly hora">4hrs</p>
+              <p class="weakly sub">Previous - 5hrs</p>
+              <p class="monthly hora">11hrs</p> 
+              <p class="monthly sub">Previous - 18hrs</p>
+          </div>
+      </div> 
+
+      <div class="social fundo">
+          <div class="card">
+              <div class="card-header">
+                  <p>Social</p>
+                  <div class="menu-dots">...</div>
+              </div>
+              <p class="daily hora">1hr</p> 
+              <p class="daily sub">Previous - 3hrs</p> 
+              <p class="weakly hora">5hrs</p>
+              <p class="weakly sub">Previous - 10hrs</p>
+              <p class="monthly hora">21hrs</p> 
+              <p class="monthly sub">Previous - 23hrs</p>
+          </div>
+      </div> 
+
+      <div class="self fundo">
+          <div class="card">
+              <div class="card-header">
+                  <p>Self Care</p>
+                  <div class="menu-dots">...</div>
+              </div>
+              <p class="daily hora">0hrs</p> 
+              <p class="daily sub">Previous - 1hr </p>
+              <p class="weakly hora">2hrs</p>
+              <p class="weakly sub">Previous - 2hrs</p>
+              <p class="monthly hora">7hrs</p> 
+              <p class="monthly sub">Previous - 11hrs</p>
+          </div>
+      </div> 
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="index.js" charset="UTF-8"></script>
+</body>
+</html>

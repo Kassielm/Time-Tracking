@@ -1,0 +1,206 @@
+html, body {
+    font-size: 18px;
+    font-family: 'Rubik', sans-serif;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(226, 43%, 10%);
+}
+.container {
+    height: auto;
+    width: 90%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 250px);
+    grid-template-rows: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.firts-card { 
+    grid-area: 1 / 1 / 3 / 2;
+    height: 100%;
+    background-color: hsl(235, 46%, 20%);
+    border-radius: 20px;
+}
+
+.foto {
+    width: 80px;
+    height: 80px;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+.main-card {
+    position: relative;
+    border-radius: 20px;
+    background-color: hsl(246, 80%, 60%);
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    z-index: 2;
+}
+.main-card > p {
+    color: hsl(236, 100%, 87%);
+    font-size: 15px;
+    margin-top: 40px;
+    margin-bottom: 0;
+}
+
+.main-card > h1 {
+    margin-bottom: 40px;
+    margin-top: 0;
+    font-weight: 300;
+    color: white;
+}
+.sub-main {
+    color: white;
+    background-color: hsl(235, 46%, 20%);
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    margin-top: 10px;
+    border-radius: 20px;
+}
+
+.sub-main > p {
+    margin: 8px 30px;
+    font-size: 15px;
+    font-weight: 100;
+    color: hsl(236, 100%, 87%);
+    transition: color 0.3s;
+    cursor: pointer;
+}
+
+.sub-main > p:hover {
+    color: white;
+}
+.fundo {
+    z-index: 2;
+    height: 230px;
+    display: flex;
+    flex-direction: column-reverse;
+    border-radius: 22px;
+    background-repeat: no-repeat;
+    background-position: right top;
+    transition: transform 0.3s;
+}
+
+.fundo:hover {
+    transform: scale(1.05);
+}
+
+.hora {
+    font-weight: 200;
+    font-size: 50px;
+    margin: 0;
+}
+
+.card {
+    font-weight: 300;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 5px 30px 5px;
+    color: white;
+    height: 180px;
+    background-color: hsl(235, 46%, 20%);
+    position: relative;
+    transition: filter 0.3s;
+}
+
+.card:hover {
+    filter: brightness(1.7);
+}
+.sub {
+    color: hsl(236, 100%, 87%);
+    font-size: 15px;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-dots {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.sub-main > p.active {
+    font-weight: bold;
+    color: hsl(235, 46%, 60%);
+}
+
+.weakly, .monthly {
+    display: none;
+}
+
+.work {
+    background-color: hsl(15, 100%, 70%);
+    background-image: url(images/icon-work.svg);
+}
+
+.play {
+    background-color: hsl(195, 74%, 62%);
+    background-image: url(images/icon-play.svg);
+}
+
+.study {
+    background-color: hsl(348, 100%, 68%);
+    background-image: url(images/icon-study.svg);
+}
+
+.exercise {
+    background-color: hsl(145, 58%, 55%);
+    background-image: url(images/icon-exercise.svg);
+}
+
+.social {
+    background-color: hsl(264, 64%, 52%);
+    background-image: url(images/icon-social.svg);
+}
+
+.self {
+    background-color: hsl(43, 84%, 65%);
+    background-image: url(images/icon-self-care.svg);
+}
+
+
+@media screen and (max-width: 1100px) {
+    body {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 300%;
+        padding: 0 20px;
+        gap: 20px; /* Ajuste o espaçamento entre os cards */
+    }
+
+    .sub-main {
+        flex-direction: row;
+        padding-bottom: 30px;
+        justify-content: space-around;
+    }
+    .firts-card {
+        width: 100%;
+        height: auto; /* Certifique-se de que o card principal tenha altura automática */
+        margin-bottom: 20px; /* Espaçamento entre o card principal e os outros */
+    }
+
+    .fundo {
+        width: 100%;
+        height: auto; /* Certifique-se de que os outros cards tenham altura automática */
+        margin-bottom: 20px; /* Espaçamento entre os cards */
+        padding-top: 50px;
+    }
+}
